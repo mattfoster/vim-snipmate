@@ -4,7 +4,7 @@ snippet #!
 	#!usr/bin/env gnuplot
 
 snippet plot
-	plot ${1:"file.dat"} ${2:using 1:2} ${3:with lines} title "${4:}"${7:,\}
+	plot ${1:"`Filename()`.dat"} ${2:using 1:2} ${3:with lines} title "${4:}"${7:,\}
 
 snippet fit
 	fit ${1:f(x)} ${2:"${3}.dat"} ${4:using 1:2} via "${5:start.par}"
